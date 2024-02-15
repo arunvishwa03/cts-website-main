@@ -80,6 +80,10 @@ const navTemplate = `
                   <a href="zoho_ksp.html">Zoho CRM Kick Starter Pack
                   </a>
                 </li>
+                <li>
+                  <a href="zoho_one.html">Zoho One
+                  </a>
+                </li>
                 
               </ul>
             </li>
@@ -258,7 +262,9 @@ const navTemplate = `
           </a>
           <a class="nav-link link" href="zoho_ksp.html">
             Zoho CRM Kick Starter Pack
-
+          </a>
+          <a class="nav-link link" href="zoho_one.html">
+            Zoho One
           </a>
           <a class="menu-line"
             ><i class="ti ti-angle-right" aria-hidden="true"></i
@@ -834,6 +840,12 @@ const getStart = {
       desc:
         'This exceptional package is perfect for businesses aiming to initiat the use of Zoho CRM without extensive time and cost investments. Benefit from our expertise in implementing SaaS Products for top-tier clients, which guarantees best results. The scope of this package is meticulously crafted to enable any Zoho CRM immediately after implementation.',
       link: 'zoho_crm.html',
+    },
+    {
+      title: 'Zoho One',
+      desc:
+        'This exceptional package is perfect for businesses aiming to initiat the use of Zoho One products without extensive time and cost investments. Benefit from our expertise in implementing SaaS Products for top-tier clients, which guarantees best results. The scope of this package is meticulously crafted to enable any Zoho One product immediately after implementation.',
+      link: 'zoho_one.html',
     },
   ],
   projects: [

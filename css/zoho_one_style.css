@@ -1,0 +1,217 @@
+/* 
+Explicitly declare font family
+*/
+.zoho_one{
+    background-color:white;
+    font-family:'Arial', 'Helvetica', 'sans-serif';
+}
+.zoho_one_main{
+    min-height:120vh;
+    background-color:rgb(64, 162, 216);
+    display:grid;
+    place-items:center;
+}
+.zoho_one_main>h2{
+    font-size:90px;
+    color:rgb(240, 237, 207);
+    font-weight:700;
+    position:relative;
+    bottom:50px;
+}
+.zoho_one_main>h2>.one{
+    -webkit-text-stroke:2px rgb(240, 237, 207);
+    color:rgb(64, 162, 216);
+    animation-name: one-design;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration:3s;
+}
+@keyframes one-design{
+    0%{
+        font-family:poppins,sans-serif;
+    }
+    10%{
+        font-family:'Courier New', Courier, monospace;
+    }
+    20%{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    30%{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    40%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    50%{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    60%{
+        font-family:'Times New Roman', Times, serif
+    }
+    70%{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    80%{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    90%{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    100%{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.bottom_title{
+    background-color: rgb(240, 237, 207);
+    color:black;
+    padding:20px;
+    font-size:40px;
+    border-radius:10px;
+    position:absolute;
+    bottom:-190px;
+    z-index: 1;
+    font-weight:600;
+}
+
+.s1{
+    min-height:110vh;
+    background-color:rgb(11, 96, 176);
+    position:relative;
+    display:flex;
+    justify-content:space-evenly;
+    /* flex-wrap:wrap; */
+    gap:30px;
+    padding:200px 0px;    
+}
+.s1>div{
+    color:black;
+    background-color:rgb(240, 237, 207);
+    min-width:390px;
+    max-width:30%;
+    min-height:390px;
+    border-radius:10px;
+    padding:30px;
+    box-sizing:border-box;
+    font-size:40px;
+    line-height:1.4;
+    margin-top:50px;
+    
+}
+
+.s1>div:nth-child(1){
+    position:relative;
+    top:20px;
+    
+}
+.s1>div:nth-child(2){
+    position:relative;
+    bottom:50px;  
+}
+.s1>div:nth-child(3){
+    position:relative;
+    top:20px; 
+}
+
+.s2{
+    min-height:110vh;
+    background-color:rgb(240, 237, 207);
+    padding:0px;
+    color:black;
+    padding-bottom:100px;
+}
+.s2>h2{
+    margin:60px 0px;
+    text-align:center;
+    font-weight:600;
+}
+.figure_wrap{
+    width:80vw;
+    font-size:30px;
+    margin:auto;
+    line-height:1.5;
+
+}
+.figure_wrap{
+    display:grid;
+    grid-template-areas:
+    "s s m m u u"
+    "o o m m p p"
+    "f f b b a a"
+    "l l e e c c";
+    gap:20px;
+}
+.figure_wrap>figure{
+    outline:1px solid;
+    border-radius:5px;
+    padding:10px;
+    background-color:ghostwhite;
+    box-shadow:10px 10px 0px ghostwhite;
+    border:1px solid;
+}
+figcaption{
+    color:brown;
+}
+.sales{
+    grid-area:s;
+}
+.marketing{
+    grid-area:m;
+}
+.support{
+    grid-area:u;
+}
+.communication{
+    grid-area:c;
+}
+.collaboration{
+    grid-area:o;
+}
+.productivity{
+    grid-area:p;
+}
+.finance{
+    grid-area:f;
+}
+.operations{
+    grid-area:e;
+}
+.hr{
+    grid-area:a;
+}
+.bp{
+    grid-area:b;
+}
+.legal{
+    grid-area:l;
+}
+.s3{
+    min-height:100vh;
+    background-color:rgb(0, 0, 0);
+    padding:0px;
+    color:rgb(240, 237, 207);
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+}
+.s3>h2{
+    text-align:center;
+    font-size:60px;
+    width:80vw;
+    font-weight:600px;
+}
+.s3>.middle{
+    text-align:center;
+    font-size:40px;
+    line-height:1.5;
+    width:80vw;
+}
+.s3>.bottom{
+    width:80vw;
+    /* outline:1px solid white; */
+    font-size:30px;
+    line-height:1.5;
+    text-align:center;
+}
