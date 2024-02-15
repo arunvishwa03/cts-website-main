@@ -1,0 +1,295 @@
+/*-- Use For Custom Styling --*/
+@font-face {
+  font-family: 'Good-Times';
+  src: url('fonts/good_times/GoodTimesRg-Regular.eot');
+  src: url('fonts/good_times/GoodTimesRg-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/good_times/GoodTimesRg-Regular.woff2') format('woff2'),
+    url('fonts/good_times/GoodTimesRg-Regular.woff') format('woff'),
+    url('fonts/good_times/GoodTimesRg-Regular.ttf') format('truetype'),
+    url('fonts/good_times/GoodTimesRg-Regular.svg#GoodTimesRg-Regular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+#headroom {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.animates {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+}
+
+@-webkit-keyframes swingInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-moz-keyframes swingInX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(-90deg);
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-o-keyframes swingInX {
+  0% {
+    -o-transform: perspective(400px) rotateX(-90deg);
+  }
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes swingInX {
+  0% {
+    transform: perspective(400px) rotateX(-90deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+.animates.swingInX {
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ie-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: swingInX;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: swingInX;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: swingInX;
+  backface-visibility: visible !important;
+  animation-name: swingInX;
+}
+
+@-webkit-keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+  }
+}
+
+@-moz-keyframes swingOutX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(-90deg);
+  }
+}
+
+@-o-keyframes swingOutX {
+  0% {
+    -o-transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -o-transform: perspective(400px) rotateX(-90deg);
+  }
+}
+
+@keyframes swingOutX {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(-90deg);
+  }
+}
+
+.animates.swingOutX {
+  -webkit-transform-origin: top;
+  -webkit-animation-name: swingOutX;
+  -webkit-backface-visibility: visible !important;
+  -moz-animation-name: swingOutX;
+  -moz-backface-visibility: visible !important;
+  animation-name: swingOutX;
+  backface-visibility: visible !important;
+}
+.multipage ul li ul li {
+  padding: 8px 0px;
+  font-size: 13px;
+}
+.multipage ul li ul li a {
+  padding: 5px 0;
+}
+/* .wixer li:nth-child(1) .rs-addon-beforeafter-before {
+  background: url("https://image.shutterstock.com/z/stock-photo-hand-holding-polygonal-lamp-on-grey-background-with-copyspace-enlightenment-and-innovation-concept-773293384.jpg")
+    no-repeat center center;
+  background-size: cover;
+} */
+.wixer li:nth-child(2) .rs-addon-beforeafter-before {
+  background: #ff5e00;
+}
+.wixer li:nth-child(3) .rs-addon-beforeafter-after {
+  background: #039bf3;
+}
+.bg-change.bg-light-gray {
+  background-color: #ff5e00;
+}
+#features {
+  background: #fff;
+}
+.main-title h2,
+.main-title p {
+  color: #18191d;
+}
+#features .color-black,
+#features p,
+#js-grid-mosaic .color-black,
+.custom-progress {
+  color: #18191d;
+}
+.stats .main-title h2 {
+  color: #fff;
+}
+.half-section {
+  background: #fff;
+}
+.bg-summer-sky {
+  background-color: #24c1dd;
+}
+#work {
+  background: rgb(243, 243, 243);
+}
+.col-map #google-map {
+  height: 465px;
+}
+#contact {
+  padding: 4.5rem 0;
+}
+.bg-yellow {
+  background-color: #ff5e00;
+}
+.main-title h5 {
+  color: #ff5e00;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main-title h6 {
+  color: #212529;
+}
+.navbar-top-default .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar-top-default .navbar-nav .nav-item::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  width: 0;
+  top: 80%;
+  height: 4px;
+  border-radius: 20px;
+  /* background: #ff5e00; */
+  background: linear-gradient(90deg, #ff2500, #ff7100);
+  transition: all 0.5s ease;
+}
+.navbar-top-default .navbar-nav .nav-item:hover::before,
+.navbar-top-default .navbar-nav .nav-item.active::before {
+  width: calc(100% - 1.5rem);
+}
+.multipage ul li.mega-menu > ul {
+  width: 950px;
+  left: -300px;
+  padding-left: 20px;
+}
+.color-summer-sky {
+  color: #24c1dd;
+}
+.multipage #menu ul li ul li > a:before {
+  background-color: #24c1dd;
+}
+.multipage #menu ul li ul li:hover > a {
+  color: #24c1dd;
+}
+.bg-light-gray {
+  background-color: #f6f6f6;
+}
+.price-description p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-title h4,
+.element .list-description li {
+  color: #212529;
+}
+.price_title h4 {
+  line-height: 1.3;
+}
+.element .list-description li {
+  text-align: left;
+}
+.pricing-style2 .pricing-item:hover .element .list-description li {
+  color: #fff;
+}
+.contact-form-textfield input,
+.contact-form-textfield textarea {
+  color: #212529 !important;
+}
+.techstack .serial-box {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+  margin-bottom: 20px;
+}
+.techstack .serial-box:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+.mobilemenu {
+  background: rgba(0, 0, 0, 0.9);
+}
+.timeline-panel .color-black,
+.timeline-panel p {
+  color: #18191d;
+}
+.tab-container .price_title h4 {
+  font-size: 1.25rem;
+}
+.tab-container .pricing-item {
+  padding: 1.5rem;
+}
+.tab-container .price-box {
+  padding-bottom: 10px;
+}
+.tab-container .price-description p {
+  font-size: 14px;
+}
+.product_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product_list .pricing-item {
+  flex-basis: 100%;
+}
+
+@media (min-width: 1199.98px) {
+  .product_list .pricing-item {
+    flex-basis: 30%;
+  }
+}
