@@ -1,165 +1,269 @@
-/* 
-Explicitly declare font family
-*/
-.zoho_one{
-    background-color:white;
-    font-family:'Arial', 'Helvetica', 'sans-serif';
+.zoho_crm{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.zoho_one_main{
-    min-height:120vh;
-    background-color:rgb(64, 162, 216);
-}
-.zoho_one_main>.hspan{
-    height:110vh;
+.zoho_ksp_main{
+    background-image: url('../images/zoho_ksp_i/Rectangle.jpeg');
+    height:100vh;
     display:grid;
     place-items:center;
-}
-.zoho_one_main>.hspan2{
-    height:10vh;
-    background:linear-gradient(rgb(64, 162, 216) 50%,rgb(11, 96, 176) 50%);
-    display:grid;
-    place-items: center;
-}
-.zoho_one_main>.hspan>h2{
-    font-size:90px;
-    color:rgb(240, 237, 207);
-    font-weight:700;
-    cursor:default;
-}
-
-.zoho_one_main>.hspan2>.bottom_title{
-    text-align:center;
-    background-color: rgb(240, 237, 207);
-    color:black;
-    padding:20px;
-    font-size:40px;
-    border-radius:10px;
-    font-weight:600;
-    cursor:default;
-}
-.zoho_one_main>.hspan>h2>.one{
-    -webkit-text-stroke:2px rgb(240, 237, 207);
-    color:rgb(64, 162, 216);
-    animation-name: one-design;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration:3s;
-}
-@keyframes one-design{
-    0%{
-        font-family:poppins,sans-serif;
-    }
-    10%{
-        font-family:'Courier New', Courier, monospace;
-    }
-    20%{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    30%{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    40%{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    50%{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    60%{
-        font-family:'Times New Roman', Times, serif
-    }
-    70%{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    80%{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    90%{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    100%{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-}
-
-.s1{
-    min-height:90vh;
-    background-color:rgb(11, 96, 176);
-    position:relative;
-    display:flex;
-    justify-content:space-evenly;
-    gap:30px;
-    padding:100px 0px;
-    flex-wrap:wrap;
-}
-.s1>div{
-    color:black;
-    background-color:rgb(240, 237, 207);
-    min-width:390px;
-    max-width:28%;
-    min-height:380px;
-    max-height:530px;
-    border-radius:10px;
-    padding:30px;
+    text-align: center;
+    color:white;
+    padding:50px;
     box-sizing:border-box;
-    font-size:25px;
-    line-height:1.4;
-    margin-top:30px;
-    box-shadow:0px 5px 3px black;
-    border:2px solid;
-    cursor:default;
-    display:grid;
-    place-items:center;
-    animation-name: div-pulse;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay:0s;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-@keyframes div-pulse{
+.zoho_ksp_main>h2{
+    font-size:58px !important;
+    font-weight: bold;
+    line-height: 1.5;
+    padding:10px;
+}
+.zoho_ksp_main>.main-head{
+    animation-name:main-head;
+    animation-duration:9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes main-head {
+0%{
+    color:rgb(255, 167, 88);
+}
+5%{
+    color:rgb(255, 228, 88);
+}
+25%{
+    color:rgb(255, 228, 88);
+}
+50%{
+    color:rgb(255, 228, 88);
+}
+75%{
+    color:rgb(255, 167, 88);
+}    
+100%{
+    color:rgb(255, 167, 88);
+}
+}
+
+.section-one{
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0) 95%, rgb(255, 191, 73) 95%);
+    min-height:66vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:38px;
+    font-weight: bold;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    padding:50px;
+    box-sizing:border-box;
+    color: rgb(2, 0, 150);
+}
+.section-one>div{
+    position: relative;
+    left:-300px;
+    opacity: 0;
+}
+.section-one>img{
+    position: relative;
+    right:-300px;
+    opacity: 0;
+}
+.section-one>.section-one-para{
+    animation-name:toright;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.section-one>.section-one-img{
+    animation-name:toleft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+@keyframes toright {
     0%{
-        transform:translate(0px,0px);
-    }
-    50%{
-        transform:translate(0px,10px);
+        left:-300px;
     }
     100%{
-        transform:translate(0px,0px);
+        left:0px;
+        opacity: 1;
+    }
+}
+@keyframes toleft {
+    0%{
+        right:-300px;
+    }
+    100%{
+        right:0px;
+        opacity: 1;
     }
 }
 
-.s1>div:nth-child(1){
-    position:relative;
-    top:20px;
+
+.section-two{
+    background: linear-gradient(45deg,pink 5%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%, rgb(226, 147, 0) 95%);
+    min-height:66vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:38px;
+    font-weight: bold;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    padding:50px;
+    box-sizing:border-box;
+    color: rgb(2, 0, 150);
 }
-
-.s1>div:nth-child(2){
-    position:relative;
-    bottom:50px; 
-
+.section-two>img,.section-two>div{
+    opacity:0;
 }
-.s1>div:nth-child(3){
-    position:relative;
-    top:20px; 
-
-
+.section-two-img{
+    animation:s2-spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity:0;
 }
-
-.s2{
-    min-height:110vh;
+@keyframes s2-spin{
+    0%{
+        transform:rotateY(0deg);
+        opacity:0;
+    }
+    50%{
+        transform:rotateY(180deg)
+    }
+    100%{
+        transform:rotateY(360deg);
+        opacity:1;
+    }
+}
+.section-two-para{
+    animation-name:appear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.section-three{
+    background: linear-gradient(315deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 95%, rgb(207, 66, 89) 95%);
+    min-height:66vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:38px;
+    font-weight: bold;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    padding:50px;
+    box-sizing:border-box;
+    color: rgb(2, 0, 150);
+    position: relative;
+    
+}
+.section-three>div{
+    position: relative;
+    left:300px;
+    opacity: 0;
+}
+.section-three>img{
+    position: relative;
+    right:300px;
+    opacity: 0;
+}
+.section-three>.section-three-para{
+    animation-name:torightr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.section-three>.section-three-img{
+    animation-name:toleftr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.section-wrap{
+    background-image: url('../images/zoho_ksp_i/GreyBg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@keyframes torightr {
+    0%{
+        left:300px;
+        
+    }
+    100%{
+        left:0px;
+        opacity: 1;
+    }
+}
+@keyframes toleftr {
+    0%{
+        right:300px;
+        
+    }
+    100%{
+        right:0px;
+        opacity: 1;
+    }
+}
+.highlight-orange{
+    color:rgb(224, 127, 0) !important;
+}
+.section-one div{
+    color:rgb(0, 105, 167)
+}
+.highlight-pink{
+    color:rgb(218, 0, 145) !important;
+}
+.section-two div{
+    color:rgb(0, 105, 167)
+}
+.highlight-brown{
+    color:rgb(255, 115, 0) !important;
+}
+.section-three div{
+    color:rgb(51, 7, 7)
+}
+.section-four{
+    max-height:300vh;
+    /* height:fit-content !important; */
     background-color:rgb(240, 237, 207);
     padding:0px;
     color:black;
     padding-bottom:100px;
 }
-.s2>h2{
-    margin:60px 0px;
+.section-four>h2{
+    padding:60px 0px;
     text-align:center;
     font-weight:600;
     cursor:default;
 }
-.s2>.line_wrap>.line{
-    width:1000px;
+.section-four>.line_wrap>.line{
+    width:300px;
+    height:300px;
     font-size:30px;
     padding:10px;
     background-color:ghostwhite;
@@ -169,106 +273,371 @@ Explicitly declare font family
     box-shadow:12px 12px 0px ghostwhite;
     text-align:left;
     cursor:default;
-
-}
-
-.s2>.line_wrap{
-    height:80vh;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.s3{
-    min-height:100vh;
-    background-color:rgb(0, 0, 0);
-    padding:0px;
-    color:rgb(240, 237, 207);
     display:flex;
     justify-content: center;
-    flex-direction: column;
-    gap:50px;
     align-items: center;
-    cursor: default;
+    position:relative;
 }
-.s3>h2{
-    text-align:center;
-    font-size:60px;
-    width:80vw;
-    font-weight:600px;
-    
-}
-.s3>.middle{
-    text-align:center;
-    font-size:40px;
-    line-height:1.5;
-    width:80vw;
-    
-}
-.s3>.bottom{
-    min-width:80vw;
-    font-size:30px;
-    line-height:1.5;
-    text-align:center;
-}
-.s3>.bottom>a{
+.section-four .ld{
+    position:absolute;
+    top:-20px;
+    background-color: brown;
+    padding:20px;
     font-size:1.3em;
-    font-weight: 600;
-    color:#53a6ff;
-    border-bottom:2px solid #53a6ff;
-}
-.s3>.bottom>a{
-    color:#ff5370;
-    border-bottom:2px solid #ff5370;
-}
-
-@media (max-width:870px){
-    .s1{
-        padding:0px;
-        padding-bottom:100px;
-        gap:10px;
-
-    }
-    .s1>div{
-        animation:none !important;
-        top:20px;
-    }
-    .zoho_one_main h2{
-        font-size:60px !important;
-    }
+    border-radius:50%;
+    color:white;
 
 }
-@media (max-width:1070px){
-    .s2 .line{
-        width: 100% !important;
-        font-size:20px !important;
-    }
-    .s2 .line_wrap{
-        padding:0px 20px;
+.section-four>.line_wrap{
+    height:80vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center;
+    gap:50px;
+}
+
+.section-five{
+    background: linear-gradient(135deg,rgb(17, 90, 90) 10%,rgb(215, 250, 255) 10%, rgb(215, 250, 255) 90%, rgb(17, 90, 90) 90%);
+
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+    position: relative;
+    padding:50px;
+    box-sizing:border-box;
+    gap:50px;
+}
+.section-five-top{
+    
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+}
+.section-five-top h3{
+    margin:0px;
+    font-size:60px !important;
+    font-weight: bold;
+    z-index: 1;
+    padding-top:30px;
+}
+.section-five-middle{
+    display:flex;
+    flex-direction: column;
+    font-size:30px;
+    gap:30px;
+    text-align: center;
+    flex-grow:2;
+
+    justify-content: space-evenly;
+}
+
+.section-five-middle span{
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    line-height: 1.8;
+    position: relative;
+    font-weight: bold;
+}
+.section-five-bottom{
+    color: rgb(0, 0, 0);
+    font-size:30px;
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5;
+    flex-grow:3;
+    gap:30px;
+    justify-content: space-evenly;
+}
+.section-five-bottom div:nth-child(2){
+    text-align: center;
+    font-size:1.2em;
+}
+.section-five-bottom div:nth-child(1){
+    font-weight: 900;
+    font-size:60px;
+}
+.section-five-bottom button{
+    border-radius:5px;
+    border:0px;
+    background:rgb(255, 109, 99);
+    font-weight:500;
+    padding:10px;
+}
+.section-five img[alt='dots design']{
+    position: absolute;
+    top:35px;
+    right:0px;
+    height:150px;
+}
+.shift{
+    position:relative;
+    left:65%;
+}
+.section-five iframe{
+    width:100%;
+    min-height: 1990px;
+    min-height: 80vh;
+    border-radius: 5px;
+}
+
+@media (max-width:1300px){
+    .section-five-bottom div:nth-child(1){
+        font-size:33px;
     }
 }
-@media (max-width:830px){
-    .s3 h2{
-        font-size:60px;
+@media (max-width:1246px){
+    .config,.establish,.roles{
+        min-height:154px !important;
     }
-    .s3 .middle{
+
+}
+@media(max-width:1111px){
+    .section-four .line_wrap{
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+    }
+}
+@media (max-width:960px){
+    
+    .shift{
+        left:0%;
+    }
+    .shift2{
+        left:55%
+    }
+    .config,.establish,.roles{
+        min-height:130px !important;
+    }
+}
+
+
+@media (max-width:821px){
+    .config,.establish{
+        min-height:154PX !important;
+    }
+}
+@media (max-width:800px){
+    main{
         font-size:30px;
-        padding:20px;
-        box-sizing:border-box
     }
-    .s3 .bottom{
-        font-size:20px;
-        padding:20px;
-        box-sizing:border-box
+    .section-one{
+        font-size:30px;
+    }
+    .section-two{
+        font-size:30px;
+    }
+    .section-three{
+        font-size:30px;
+    }
+  
+    .section-five-top{
+        font-size:30px;
+    }
+    .section-five-middle{
+        font-size:25px;
+    }
+    .section-five-bottom{
+        font-size:25px;
     }
 }
-@media(max-width:490px){
-    .zoho_one_main .bottom_title{
-        z-index:1;
-        font-size:20px !important;
+@media (max-width:711px){
+    
+    .config,.establish{
+        min-height:180px !important;
     }
-    .s1>div{
-        min-width:360px;
+}
+@media (max-width:700px){
+    .config,.establish{
+        min-height:130px !important;
+    }
+
+    .shift2{
+        left:0%
+    }
+    .shift3{
+        left:55%;
+    }
+}
+@media(max-width:673px){
+    .section-four .line_wrap{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+}
+
+@media (max-width:600px){
+    main{
+        font-size:25px;
+    }
+    .section-one{
+        font-size:22px;
+    }
+    .section-two{
+        font-size:23px;
+    }
+    .section-three{
+        font-size:23px;
+    }
+   
+    .section-five-top{
+        font-size:30px;
+    }
+    .section-five-middle{
+        font-size:25px;
+    }
+    .section-five-bottom{
+        font-size:25px;
+    }
+}
+@media (max-width:566px){
+    .config{
+        min-height:154px !important;
+    }
+}
+@media (max-width:470px){
+    main{
+        font-size:20px;
+    }
+    .section-one{
+        font-size:20px;
+    }
+    .section-two{
+        font-size:20px;
+    }
+    .section-three{
+        font-size:20px;
+    }
+   
+    .section-five-middle{
+        font-size:20px;
+    }
+    .section-five-bottom{
+        font-size:20px;
+        justify-content: flex-start;
+    }
+
+}
+
+@page {
+    size:A4 portrait;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+@media print{
+    body{
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+      }
+    .zoho_ksp_main>h2{
+        color:rgb(95, 113, 97) !important;
+        
+        font-size:90px !important;
+        background-color: rgb(254, 251, 246) !important;
+        border-radius:40px;
+    } 
+    .zoho_ksp_main{
+        background:repeating-linear-gradient(45deg, rgb(95, 113, 97),rgb(95, 113, 97) 50px,rgb(109, 139, 116) 50px,rgb(109, 139, 116) 100px) !important;
+    }
+    .section-one{
+        background-color:rgb(225, 240, 218);
+    }
+    .section-one>div{
+        font-size:45px;
+    }
+    .section-one>img,.section-two>img,.section-three>img{
+        width:500px;
+        height:400px;
+    }
+    .section-two{
+        background-color:rgb(225, 240, 218);
+
+    }
+    .section-two>div{
+        font-size:45px;
+    }
+    .section-three{
+        background-color:rgb(225, 240, 218);
+    }
+    .section-three>div{
+        font-size:45px;
+    }
+    .section-five{
+        background:linear-gradient(rgb(153, 188, 133) 20%,rgb(225, 240, 218) 20%, rgb(225, 240, 218) 85%,rgb(153, 188, 133) 85%, rgb(153, 188, 133)100%) !important;
+        
+    }
+    
+    header{
+        display: none;
+    }
+    img[alt='left arrow icon']{
+        display:none;
+    }
+    img[alt='right arrow icon']{
+        display:none;
+    }
+    .section-one,.section-two,.section-three{
+        height:100vh !important;
+    }
+    .section-one>div{
+        
+        left:0px !important;
+        opacity: 1;
+    }
+    .section-one>img{
+        right:0px !important;
+        opacity: 1;
+    }
+    .section-two>div{
+        opacity: 1;
+    }
+    .section-two>img{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    .section-three>div{
+        opacity: 1;
+        left:0px !important;
+    }
+    .section-three>img{
+        opacity: 1;
+        right:0px !important;
+    }
+
+
+    .enable{
+        left:55%;
+    }
+    .section-five-middle>div>span{
+        color: black !important;        font-size:40px !important;
+    }
+    .section-five-middle>div:nth-child(1)>span{
+        font-size:42px !important;
+    }
+
+    .section-five-bottom>div:nth-child(2){
+        display:none;
+    }
+    .section-five{
+        justify-content: center;
+        gap: 10px;
+    }
+    .section-five h3{
+        font-size:90px !important;
+    }
+    .section-five iframe{
+        display:none;
+    }
+    .section-five-bottom>div{
+        position:relative;
+        bottom:130px;
+        font-size:39px;
+        text-align:justify;
     }
 }
