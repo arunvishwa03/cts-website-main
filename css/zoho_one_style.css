@@ -343,9 +343,10 @@
 .section-five-bottom button{
     border-radius:5px;
     border:0px;
-    background:rgb(255, 109, 99);
+    background:rgb(67, 233, 142);
     font-weight:500;
     padding:10px;
+    border:2px solid;
 }
 .section-five img[alt='dots design']{
     position: absolute;

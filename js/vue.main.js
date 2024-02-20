@@ -74,7 +74,7 @@ const navTemplate = `
               </li>
 
               <li>
-              <a href="#" style="font-weight:600; ">ZOHO &lpar;IMPLEMENTATION AND CUSTOMIZATION&rpar; </a> <span class=""></span>
+              <a href="#" style="font-weight:600;">SaaS Products - Implementation</a> <span class=""></span>
               <ul>
                 <li>
                   <a href="zoho_ksp.html">Zoho CRM Kick Starter Pack
